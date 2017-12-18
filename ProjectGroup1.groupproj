@@ -1,0 +1,40 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{b4064326-7e11-4dbf-880e-08d774df2cc2}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup />
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="CrazyChat">
+    <MSBuild Projects="CrazyChat.dproj" Targets="" />
+  </Target>
+  <Target Name="CrazyChat:Clean">
+    <MSBuild Projects="CrazyChat.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="CrazyChat:Make">
+    <MSBuild Projects="CrazyChat.dproj" Targets="Make" />
+  </Target>
+  <Target Name="ClienteChat">
+    <MSBuild Projects="ClienteChat\ClienteChat.dproj" Targets="" />
+  </Target>
+  <Target Name="ClienteChat:Clean">
+    <MSBuild Projects="ClienteChat\ClienteChat.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="ClienteChat:Make">
+    <MSBuild Projects="ClienteChat\ClienteChat.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="CrazyChat;ClienteChat" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="CrazyChat:Clean;ClienteChat:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="CrazyChat:Make;ClienteChat:Make" />
+  </Target>
+</Project>
