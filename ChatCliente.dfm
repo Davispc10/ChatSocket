@@ -1,9 +1,10 @@
 object Form2: TForm2
   Left = 0
   Top = 0
+  BorderStyle = bsSingle
   Caption = 'CrazyChat'
-  ClientHeight = 344
-  ClientWidth = 285
+  ClientHeight = 354
+  ClientWidth = 295
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -11,6 +12,7 @@ object Form2: TForm2
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Scaled = False
   OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
@@ -33,6 +35,20 @@ object Form2: TForm2
     Width = 97
     Height = 13
     Caption = 'by David e Bianca...'
+  end
+  object Label3: TLabel
+    Left = 8
+    Top = 44
+    Width = 49
+    Height = 13
+    Caption = 'Endere'#231'o:'
+  end
+  object Label4: TLabel
+    Left = 167
+    Top = 44
+    Width = 30
+    Height = 13
+    Caption = 'Porta:'
   end
   object JvXPButton1: TJvXPButton
     Left = 8

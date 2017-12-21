@@ -19,6 +19,8 @@ type
     SpinEdit1: TSpinEdit;
     Edit2: TEdit;
     JvXPButton3: TJvXPButton;
+    Label3: TLabel;
+    Label4: TLabel;
     procedure JvXPButton1Click(Sender: TObject);
     procedure ClientSocket1Connect(Sender: TObject; Socket: TCustomWinSocket);
     procedure ClientSocket1Disconnect(Sender: TObject;

@@ -34,11 +34,11 @@ object Form1: TForm1
     Caption = 'by David e Bianca...'
   end
   object Label3: TLabel
-    Left = 8
+    Left = 522
     Top = 23
-    Width = 40
+    Width = 54
     Height = 13
-    Caption = 'Users: 0'
+    Caption = 'Usu'#225'rios: 0'
   end
   object memo1: TMemo
     Left = 118

@@ -63,7 +63,7 @@ procedure TForm1.ServerSocket1ClientConnect(Sender: TObject;
 begin
   Memo1.Lines.Add('Cliente conectado: ' + Socket.RemoteAddress + ':' + IntToStr(Socket.RemotePort));
   user := user + 1;
-  Label3.Caption := 'Users: ' + IntToStr(user);
+  Label3.Caption := 'Usuários: ' + IntToStr(user);
 end;
 
 procedure TForm1.ServerSocket1ClientDisconnect(Sender: TObject;
